@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" href="nav.css">
+<title> GC University </title>
+</head>
+<body>
+<ul>
+  <li><a href="main.html">Home</a></li>
+  <li><a href="g.html">Gallery</a></li>
+  <li><a href="c.html">Contact</a></li>
+  <li><a href="a.html">About</a></li>
+  <li> <a> <button class="open-btn" onclick="openForm()"> Enquiry </button> </a></li>
+</ul>
+<div class="popup" id="popupForm">
+    <div class="popup-content">
+     <span class="close-btn" onclick="closeForm()">&times;</span>
+     <h3>Enquiry Form</h3>
+      <form>
+        <input type="text" id="name" placeholder="Enter your name" required><br>
+        <input type="email" id="email" placeholder="Enter your email" required><br>
+        <textarea id="message" placeholder="Your message" rows="4"></textarea><br>
+        <button type="button" class="submit-btn" onclick="submitForm()"> Submit </button>
+      </form>
+    </div>
+</div>
+<script>
+	function openForm() 
+	{
+      		document.getElementById("popupForm").style.display = "block";
+    	}
+
+	function closeForm() 
+	{
+      		document.getElementById("popupForm").style.display = "none";
+    	}
+	function submitForm()
+	{
+      		let name = document.getElementById("name").value;
+      		let email = document.getElementById("email").value;
+      		let message = document.getElementById("message").value;
+		if(name && email && message)
+		{
+        		alert("Thank you, " + name + "! Your enquiry has been submitted.");
+        		closeForm();
+      		} 
+		else 
+		{
+        		alert("Please fill all fields before submitting.");
+      		}
+    	}
+</script>
+<h1> WELCOME TO GURUCHARAN UNIVERSITY </H1>
+<H2> SILCHAR </H2>
+<P>
+	"Education is not the filling of a pail, but the lighting of a fire."
+</P>
+<H6> Copyright © NIELIT-INTERN GROUP Gurucharan University, Silchar. </H6>
+
+</body>
+</html>

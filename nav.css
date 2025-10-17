@@ -1,0 +1,108 @@
+ul 
+{
+  list-style-type: none;   // remove unordered symbols
+  border: 1px solid;
+  margin: 0px;
+  padding: 30px;
+  overflow: hidden;
+}
+li
+{
+  float:left;
+}
+li a
+{
+  padding: 60px;
+  font-size:30px;
+  text-decoration: none;   // remove underline
+}
+
+body
+{
+background-color:lightpink;
+}
+h1
+{
+font-size:60px;
+font-family:lucida handwriting;
+TEXT-ALIGN:CENTER;
+MARGIN:180PX 10PX 10PX 10PX;
+COLOR: RED;
+}
+h2
+{
+font-size:45px;
+font-family:TIMES NEW ROMAN;
+TEXT-ALIGN:CENTER;
+COLOR:RED;
+font-family:lucida handwriting;
+} 
+p 
+{
+font-size: 60px;
+FONT-STYLE: ITALIC;
+TEXT-ALIGN:JUSTIFY;
+MARGIN:100PX 180PX 10PX 180PX;
+}
+H6
+{
+FONT-SIZE: 20PX;
+TEXT-ALIGN:CENTER;
+MARGIN:200PX 180PX 10PX 180PX;
+}
+.open-btn 
+{
+      color: red;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0PX 0PX 0PX 90%;
+      font-size: 20px;
+      font-family: lucida handwriting;
+    }
+
+.popup 
+{
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+}
+.popup-content 
+{
+      background: white;
+      width: 350px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+}
+.close-btn 
+{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      color: red;
+}
+input, textarea 
+{
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+}
+.submit-btn 
+{
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+}
+
